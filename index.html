@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt Dampfmaschine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+    <!-- Burger-Menü-Button -->
+<button class="burger-button" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar hidden">
+  <nav>
+    <a href="index.html">Erklärung</a>
+    <a href="geschichte.html">Geschichte</a>
+    <a href="Unser_Projekt.html">Unser Projekt</a>
+  </nav>
+</div>
+
+
+ 
+  <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+
+  <div class="banner">
+    <div class="lauftext">
+      Maxi &nbsp;&nbsp;&nbsp;&nbsp; Max &nbsp;&nbsp;&nbsp;&nbsp; Andrin &nbsp;&nbsp;&nbsp;&nbsp; Mario
+    </div>
+  </div>
+
+  
+
+
+  <h1>Projekt Dampfmaschine</h1>
+
+  <br>
+  <h2>Erklärung</h2>
+
+<br><br>
+
+  <video width="800" controls playsinline>
+    <source src="vid2.mp4" type="video/mp4" />
+    Dein Browser unterstützt das Video-Tag nicht.
+  </video>
+
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.querySelector(".mode-toggle");
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        btn.textContent = "🌙";
+      } else {
+        btn.textContent = "☀️";
+      }
+    }
+  </script>
+
+  <script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("hidden");
+  }
+</script>
+
+
+</body>
+</html>

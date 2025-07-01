@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt Dampfmaschine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+    <!-- Burger-Menü-Button -->
+<button class="burger-button" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar hidden">
+  <nav>
+    <a href="geschichte.html">Geschichte</a>
+    <a href="index.html">Erklärung</a>
+    <a href="Unser_Projekt.html">Unser Projekt</a>
+  </nav>
+</div>
+
+
+ 
+  <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+
+  <div class="banner">
+    <div class="lauftext">
+      Maxi &nbsp;&nbsp;&nbsp;&nbsp; Max &nbsp;&nbsp;&nbsp;&nbsp; Andrin &nbsp;&nbsp;&nbsp;&nbsp; Mario
+    </div>
+  </div>
+
+  
+
+
+  <h1>Projekt Dampfmaschine</h1>
+  <br>
+  <h2>Geschichte</h2>
+
+
+<br><br>
+
+
+
+<div class="text-section">
+  <p>Die Geschichte der Dampfmaschine beginnt mit einfachen Ideen und endet in einer der wichtigsten Erfindungen der Menschheit. Schon im 1. Jahrhundert n. Chr. entwickelte der Grieche Heron von Alexandria ein Gerät namens „Aeolipile“, das durch Dampf angetrieben wurde – aber nur als Spielerei.</p>
+
+  <p>Erst im 17. Jahrhundert wurde Dampf ernsthaft zur Arbeit genutzt. 1698 erfand Thomas Savery eine Pumpe, die mit Dampf Wasser aus Bergwerken förderte. Sie hatte jedoch Sicherheitsprobleme. 1712 entwickelte Thomas Newcomen eine verbesserte Version – die erste wirklich einsetzbare Dampfmaschine. Sie arbeitete mit einem Kolben und wurde vor allem im Bergbau verwendet.</p>
+
+  <p>Der große Durchbruch kam 1769 mit James Watt. Er machte die Dampfmaschine viel effizienter, indem er einen separaten Kondensator einführte. Dadurch wurde sie vielseitig einsetzbar – in Textilfabriken, Mühlen und später auch in Lokomotiven und Schiffen. Die Dampfmaschine trieb die industrielle Revolution im 18. und 19. Jahrhundert entscheidend voran.</p>
+
+  <p>Im 19. Jahrhundert wurde sie stetig weiterentwickelt. Mit der Zeit wurde sie aber durch Elektromotoren und Verbrennungsmotoren ersetzt. Trotzdem bleibt sie ein Symbol für den Beginn des Maschinenzeitalters – ein Meilenstein der Technikgeschichte. Ohne sie wäre die moderne Welt nicht denkbar.</p>
+</div>
+
+
+  
+
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.querySelector(".mode-toggle");
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        btn.textContent = "🌙";
+      } else {
+        btn.textContent = "☀️";
+      }
+    }
+  </script>
+
+  <script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("hidden");
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt Dampfmaschine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+    <!-- Burger-Menü-Button -->
+<button class="burger-button" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar hidden">
+  <nav>
+    <a href="Unser_Projekt.html">Unser Projekt</a>
+    <a href="geschichte.html">Geschichte</a>
+    <a href="index.html">Erklärung</a>
+  </nav>
+</div>
+
+
+ 
+  <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+
+  <div class="banner">
+    <div class="lauftext">
+      Maxi &nbsp;&nbsp;&nbsp;&nbsp; Max &nbsp;&nbsp;&nbsp;&nbsp; Andrin &nbsp;&nbsp;&nbsp;&nbsp; Mario
+    </div>
+  </div>
+
+  
+
+
+  <h1>Projekt Dampfmaschine</h1>
+  
+  <br>
+  <h2>Unser Projekt</h2>
+
+<br><br>
+
+<div class="text-section">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Vestibulum viverra justo a erat tristique, nec tempor enim blandit.</p>
+<p>Praesent faucibus velit at neque dignissim, ac laoreet velit facilisis.</p>
+<p>Donec fringilla magna non orci eleifend, at placerat purus faucibus.</p>
+<p>Integer sit amet ligula ut leo cursus feugiat.</p>
+<p>Sed euismod justo non nulla vehicula, a pulvinar nisi fermentum.</p>
+<p>Morbi volutpat felis id arcu iaculis, nec cursus sem congue.</p>
+<p>Aenean at turpis vel velit cursus laoreet a nec turpis.</p>
+<p>Phasellus ut elit nec arcu ultrices volutpat.</p>
+<p>Curabitur eu mi ut erat tincidunt pretium.</p>
+
+</div>
+
+
+  
+
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.querySelector(".mode-toggle");
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        btn.textContent = "🌙";
+      } else {
+        btn.textContent = "☀️";
+      }
+    }
+  </script>
+
+  <script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("hidden");
+  }
+</script>
+
+
+</body>
+</html>
